@@ -39,7 +39,9 @@ struct Array* Merge(struct Array *arr1,struct Array *arr2){
 int main(int argc, char const *argv[])
 {
     struct Array arr1 = {{2,6,10,15,25},10,5};
+    Display(arr1);
     struct Array arr2 = {{3,4,7,18,20},10,5};
+    Display(arr2);
     struct Array *arr3;
     arr3=Merge(&arr1,&arr2);
     Display(*arr3);
